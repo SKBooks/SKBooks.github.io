@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Navbar</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="SKB-Stylesheet.css">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:500&display=swap" rel="stylesheet">
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script type="text/javascript">
+          function send_email_info() {
+            Email.send({
+                Host: "smtp.gmail.com",
+                Username: "skbooks2021@gmail.com",
+                Password: "saaketh2827",
+                To: 'saaketh1212416@gmail.com',
+                From: "skbooks2021@gmail.comm",
+                Subject: "Sending Email using javascript",
+                Body: "Well that was easy!!",
+                Attachments: [
+                  {
+                    name: "File_Name_with_Extension",
+                    path: "Full Path of the file"
+                  }]
+              })
+                .then(function (message) {
+                  alert("Mail has been sent successfully")
+                });
+            }
+        </script>
+    </head>
+    <body>
+        <header>
+            <a class="logo" href = "index.html"><img src="images/logo.svg" alt="logo"></a>
+            <nav>
+                <ul class="nav__links">
+                    <li><a href="SKB-Website-Page1.html">Released Books</a></li>
+                    <li><a href="SKB-Website-Page2.html">Upcoming Books</a></li>
+                    <li><a href="SKB-Website-Page3.html">Games</a></li>
+                </ul>
+            </nav>
+            <a class="cta" href="SKB-Website-SignUp.html">Sign Up</a>
+            <p class="menu cta">Menu</p>
+        </header>
+        <div class="overlay">
+            <a class="close">&times;</a>
+            <div class="overlay__content">
+                <a href="SKB-Website-Page1.html">Released Books</a>
+                <a href="SKB-Website-Page2.html">Upcoming Books</a>
+                <a href="SKB-Website-Page3.html">Games</a>
+            </div>
+        </div>
+        <div style="background-color: #141414;height: 100%;width: 100%;position: fixed;z-index: -2;overflow-x: hidden;padding-top: 20px;" class="Sign Up">
+            <div style="text-align: center;color: #ffffff;font-family: 'Montserrat', sans-serif;font-weight: 300;font-size: 20px;margin: 0;position: absolute;top: 39.9%;left: 50%;-ms-transform: translate(-50%, -50%);transform: translate(-50%, -50%);background-color:#141414;width:672px;height:360px;border-color:#141414;box-shadow: 0px 0px 30px #49934e;border-radius:20px;padding:10px ;" class="email">
+                <h1 style="text-align: center;color: #ffffff;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 40px;padding: 5px ">Sign Up</h1>
+                <div style = "padding:20px 10%" id="fnameentry">
+                    <input type="text" id="first_name" name="first_name" placeholder="Enter first name" style="height:10%; width:90%;padding:5px">
+                </div>
+                <div style = "padding:20px 10%" id="lnameentry">
+                    <input type="text" id="last_name" name="last_name" placeholder="Enter last" style="height:10%; width:90%;padding:5px">
+                </div>
+                <div style = "padding:20px 10%" id="emailentry">
+                    <input type="text" id="email" name="email" placeholder="Enter email" style="height:10%; width:90%;padding:5px">
+                </div>
+                <button style="border-radius:20px;position:relative; width:100px; height:50px;text-align: center;background-color:#49934e;color: #ffffff;font-family: 'Montserrat', sans-serif;font-weight: 500;font-size: 15px;padding: 5px" type="button" onclick="send_email_info()">Submit</button>
+            </div>
+            <!--
+            <div style="z-index:-10;right:0;margin:10px ;text-align:center;background-color:green;width:15%; height:80%;position: relative" class="ads">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2432607561940074"
+     crossorigin="anonymous"></script>
+            </div>
+            <div style="z-index:-10;left:0;margin:10px ;text-align:center;background-color:green;width:15%; height:80%;position: relative" class="ads1">
+                <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2432607561940074"
+     crossorigin="anonymous"></script>
+            </div>
+            -->
+        </div>
+        <script type="text/javascript" src="SKB-Javascript.js"></script>
+    </body>
+</html>
